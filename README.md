@@ -18,7 +18,7 @@ pytest Test/ --alluredir=allure-results
 allure generate allure-results -o allure-report --clean
 
 ## 项目目录说明
-···
+```
 blog_api_auto/
 ├── Test/                      # 业务模块测试用例目录
 │   └── test_login_api_auto.py # 登录模块接口自动化用例
@@ -32,7 +32,7 @@ blog_api_auto/
 ├── pytest.ini                 # pytest全局配置文件
 ├── requirements.txt           # 第三方依赖清单
 └── README.md                  # 中文项目说明
-···
+```
 ## 测试用例设计
 本项目自动化用例参考接口文档提炼，覆盖登录正向成功场景，账号为空、密码为空、账号密码错误等异常入参场景，采用@pytest.mark.parametrize实现数据驱动。后续可扩展文章发布、查询、越权校验等业务接口。
 
