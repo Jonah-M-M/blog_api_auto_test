@@ -1,5 +1,5 @@
 # 博客api接口自动化测试（基于requests和pytest）
-
+> 📖 This document is Chinese version, click to read **[English Version](./README_EN.md)**
 ## 项目介绍
 本项目基于 Requests + Pytest 实现博客后端接口自动化测试。
 完整覆盖登录模块各类正向、异常场景接口用例；
