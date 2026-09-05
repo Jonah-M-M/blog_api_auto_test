@@ -13,6 +13,7 @@
 
 ## 运行测试方法
 **在项目根目录执行下面命令**
+```bash
 pytest Test/ -v
 pytest Test/ --alluredir=allure-results
 allure generate allure-results -o allure-report --clean
