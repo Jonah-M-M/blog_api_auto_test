@@ -17,7 +17,7 @@
 pytest Test/ -v
 pytest Test/ --alluredir=allure-results
 allure generate allure-results -o allure-report --clean
-
+```
 ## 项目目录说明
 ```
 blog_api_auto/
