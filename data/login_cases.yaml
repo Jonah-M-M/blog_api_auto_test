@@ -1,0 +1,32 @@
+#登录异常接口测试用例
+
+#账号正常，密码为空
+- userName: "zhangsan"
+  password: ""
+  expected_code: -1
+  expected_message: "密码不能为空"
+#账号为空，密码正常
+- userName: ""
+  password: "123456"
+  expected_code: -1
+  expected_message: "用户名不能为空"
+#账号为空，密码为空
+- userName: ""
+  password: ""
+  expected_code: -1
+  expected_message: ["用户名不能为空","密码不能为空"]
+#正确账号，错误密码
+- userName: "zhangsan"
+  password: "123"
+  expected_code: -1
+  expected_message: "用户密码不正确"
+#错误账号，正确密码
+- userName: "1234"
+  password: "123456"
+  expected_code: -1
+  expected_message: "用户不存在"
+#错误账号，错误密码
+- userName: "1234"
+  password: "123"
+  expected_code: -1
+  expected_message: "用户不存在"
