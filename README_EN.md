@@ -1,5 +1,5 @@
 # Blog‑System API Automation Test（Based on requests and pytest）
-
+> 📖 本文档为英文版，如需阅读中文版本，请点击 **[中文版本](./README.md)**
 ## Project Introduction
 This project implements API automation testing for blog backend system based on Requests + Pytest.
 It covers full positive and abnormal test scenarios for the login module.
@@ -8,14 +8,14 @@ YAML is used for data‑driven testing, and JsonSchema performs strict validatio
 A singleton logging component built with logging module outputs logs to console, info log file and error log file separately for fast troubleshooting. Allure is supported to generate visual test reports.
 
 ## Environment Requirements
-Python >= 3.8
-Network access to the tested blog backend API service
+- Python >= 3.8
+- Network access to the tested blog backend API service
 ## How to Run Tests
 pytest Test/ -v
 pytest Test/ --alluredir=allure-results
 allure generate allure-results -o allure-report --clean
 ## Project Directory Structure
-···
+```
 blog_api_auto/
 ├── Test/                      # Business test case directory
 │   └── test_login_api_auto.py # Login module API test cases
@@ -29,7 +29,7 @@ blog_api_auto/
 ├── pytest.ini                 # Global pytest configuration
 ├── requirements.txt           # Third‑party dependency list
 └── README.md                  # Chinese project documentation
-···
+```
 
 ## Test Case Design
 Test cases are designed according to official API documentation.
