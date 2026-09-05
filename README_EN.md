@@ -11,9 +11,11 @@ A singleton logging component built with logging module outputs logs to console,
 - Python >= 3.8
 - Network access to the tested blog backend API service
 ## How to Run Tests
+```bash
 pytest Test/ -v
 pytest Test/ --alluredir=allure-results
 allure generate allure-results -o allure-report --clean
+```
 ## Project Directory Structure
 ```
 blog_api_auto/
